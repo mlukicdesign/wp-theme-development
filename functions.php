@@ -118,3 +118,29 @@ function frost_register_block_pattern_categories() {
 }
 
 add_action( 'init', 'frost_register_block_pattern_categories' );
+
+
+
+
+/**
+ * Register block patterns.
+ *
+ * @since 1.0.4
+ */
+
+
+
+ function my_custom_block_assets() {
+    wp_enqueue_script(
+        'my-custom-block-script',
+        get_template_directory_uri() . '/js/custom-hero-block.js',
+        array( 'wp-blocks', 'wp-editor', 'wp-components', 'wp-element', 'wp-api' ),
+        true
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'my_custom_block_assets' );
+
+
+
+
+

@@ -169,3 +169,53 @@ textarea {
 	}
 
 }
+
+
+/* -- Custom Styles -- */
+
+
+.content-container {
+	display: flex;
+    align-items: flex-start;
+}
+
+.image-wrap {
+	position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.content-wrap {
+	flex: 1;
+    margin-left: 80px;
+}
+
+
+.hero-section {
+	height: 700px;
+	margin-left: 200px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.full-height {
+	height: 100vh;
+	width: 100vw;
+}
+
+
+.header-navigation-style {
+	display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+	padding: 40px;
+    width: 100%;
+    z-index: 10;
+}
+
+.wp-block-group {
+	padding: 0px;
+}
