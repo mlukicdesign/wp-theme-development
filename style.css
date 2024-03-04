@@ -214,8 +214,27 @@ textarea {
 	padding: 40px;
     width: 100%;
     z-index: 10;
+	background-color: rgba(0,0,0,.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .wp-block-group {
 	padding: 0px;
+}
+
+.homepage-cta {
+	height: 600px;
+	background-attachment: fixed;
+}
+
+
+.side-title {
+	position: sticky;
+	top: 300px;
+}
+
+.darken-background {
+	background-color: rgba(0,0,0,.5);
+	background-blend-mode: soft-light;
 }
